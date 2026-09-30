@@ -1,4 +1,4 @@
-# Fashion-MNIST ANN Pipeline
+# Fashion-MNIST ANN Classification Pipeline
 
 End-to-end machine learning pipeline using Git, DVC, Google Drive, and TensorFlow.
 
