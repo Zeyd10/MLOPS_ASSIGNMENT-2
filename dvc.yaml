@@ -37,9 +37,10 @@ stages:
     cmd: python src/evaluate.py
     deps:
       - src/evaluate.py
-      - data/processed
       - models/model.h5
-    metrics:
-      - metrics.json
+      - data/processed
     outs:
       - models/confusion_matrix.png
+    metrics:
+      - metrics.json:
+          cache: false
