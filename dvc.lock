@@ -23,13 +23,8 @@ stages:
       nfiles: 4
     - path: src/preprocess.py
       hash: md5
-<<<<<<< HEAD
-      md5: 497346f3ec635e0aaa4fc23af84dc8b0
-      size: 1807
-=======
       md5: 8605ae95b797ee21f326dfae60f7321a
       size: 1821
->>>>>>> teammate-sim
     params:
       params.yaml:
         preprocess.seed: 42
@@ -37,11 +32,7 @@ stages:
     outs:
     - path: data/processed
       hash: md5
-<<<<<<< HEAD
-      md5: d936d02f4963a99a9312ae75362faf59.dir
-=======
       md5: 80b0f631016c9b32acc28561c8a7a632.dir
->>>>>>> teammate-sim
       size: 219590768
       nfiles: 6
   train:
@@ -49,11 +40,7 @@ stages:
     deps:
     - path: data/processed
       hash: md5
-<<<<<<< HEAD
-      md5: d936d02f4963a99a9312ae75362faf59.dir
-=======
       md5: 80b0f631016c9b32acc28561c8a7a632.dir
->>>>>>> teammate-sim
       size: 219590768
       nfiles: 6
     - path: src/train.py
@@ -70,19 +57,11 @@ stages:
     outs:
     - path: models/history.csv
       hash: md5
-<<<<<<< HEAD
-      md5: 6ff3305c6ea50679e2ff43f047457505
-      size: 815
-    - path: models/model.h5
-      hash: md5
-      md5: 06dfd95a64d7ec15e23cca68442bf63c
-=======
       md5: 7439c88eeebd873a2eb9d78965797d96
       size: 813
     - path: models/model.h5
       hash: md5
       md5: bcc0f3580a92d0c1b9a8f2ddc10dee15
->>>>>>> teammate-sim
       size: 2466904
   evaluate:
     cmd: python src/evaluate.py
