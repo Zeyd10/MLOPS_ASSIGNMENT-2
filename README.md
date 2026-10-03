@@ -4,3 +4,6 @@ End-to-end machine learning pipeline using Git, DVC, Google Drive, and TensorFlo
 
 ## Project
 A fully-connected Artificial Neural Network (ANN) for Fashion-MNIST classification.
+## Version Control
+
+This project uses Git and DVC for versioning.
